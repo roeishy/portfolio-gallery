@@ -44,3 +44,4 @@ function renderModal(id) {
     Close Project</button>`;
     $('.modal-body').html(strHTML);
 }
+
