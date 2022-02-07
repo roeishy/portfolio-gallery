@@ -1,5 +1,7 @@
 'use strict'
 
+$('#contact-submit').click(onSubmit);
+
 function init() {
     renderProjs();
 }
@@ -45,3 +47,10 @@ function renderModal(id) {
     $('.modal-body').html(strHTML);
 }
 
+function onSubmit() {
+    var $elEmail = $('#contact-email').val()
+    var $elSubject = $('#contact-subject').val()
+    var $elMsg = $('#contact-msg').val()
+    var url = `https://mail.google.com/mail/?view=cm&fs=1&to=me@example.com&su=${$elSubject}&body=${$elMsg}&bcc=${$elEmail}`
+    window.open(url)
+}
