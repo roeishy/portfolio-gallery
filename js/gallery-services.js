@@ -21,8 +21,8 @@ var gProjs = [
         labels: ["Matrixes", "keyboard events"],
     },
     {
-        id: "touch nums",
-        name: "touch nums",
+        id: "ball board",
+        name: "Ball Board",
         title: "Better push those boxes",
         desc: "lorem ipsum lorem ipsum lorem ipsum",
         url: "projs/pac man",
